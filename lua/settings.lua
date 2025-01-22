@@ -20,3 +20,7 @@ vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
 vim.opt.swapfile = false
+
+vim.opt.foldmethod = 'expr'
+vim.opt.foldminlines = 2
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
