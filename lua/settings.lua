@@ -23,4 +23,5 @@ vim.opt.swapfile = false
 
 vim.opt.foldmethod = 'expr'
 vim.opt.foldminlines = 2
+vim.opt.foldlevel = 1
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"

@@ -2,11 +2,16 @@ return {
   "neovim/nvim-lspconfig", -- LSP support
   config = function()
     local lspconfig = require("lspconfig")
-    lspconfig.phpactor.setup({})
+    local on_attach = function()
+      vim.keymap.set("n", "<A-enter>", "<cmd>lua vim.lsp.buf.code_action()<cr>")
+    end
     lspconfig.intelephense.setup({
       init_options = {
         licenceKey = os.getenv('HOME') .. '/intelephense/licence.txt'
       }
+    })
+    lspconfig.phpactor.setup({
+      on_attach = on_attach
     })
     lspconfig.lua_ls.setup({
       settings = {
