@@ -1,7 +1,7 @@
 vim.keymap.set('n', ';', ':', { desc = 'Easier command prompt' })
 vim.keymap.set('i', 'jj', '<esc>', { desc = "Remap jj to esc" })
 
-vim.keymap.set('n', '<F1>', '<cmd>lua MiniFiles.open()<cr>', { desc = "File explorer" })
+vim.keymap.set('n', '<F1>', '<cmd>Oil<cr>', { desc = "File explorer" })
 vim.keymap.set('n', '<c-p>', '<cmd>Pick files<cr>', { desc = "File picker" })
 vim.keymap.set('n', '<leader>fg', '<cmd>Pick grep_live<cr>', { desc = "File live grep" })
 
