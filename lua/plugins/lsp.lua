@@ -5,6 +5,7 @@ return {
     local on_attach = function()
       vim.keymap.set("n", "<A-enter>", "<cmd>lua vim.lsp.buf.code_action()<cr>")
     end
+    lspconfig.jsonls.setup({})
     lspconfig.intelephense.setup({
       init_options = {
         licenceKey = os.getenv('HOME') .. '/intelephense/licence.txt'
