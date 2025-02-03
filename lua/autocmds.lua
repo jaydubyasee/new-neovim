@@ -17,10 +17,3 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
   group = vim.api.nvim_create_augroup("LuaIndent", { clear = true }),
 })
-
-vim.api.nvim_create_autocmd("FileType", {
-  pattern = "minifiles",
-  callback = function()
-    vim.api.nvim_buf_set_keymap(0, "n", "<F1>", "<cmd>lua MiniFiles.close()<cr>", {})
-  end
-})
