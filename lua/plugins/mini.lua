@@ -6,17 +6,17 @@ return {
     require('mini.comment').setup()
     require('mini.icons').setup()
     require('mini.pairs').setup()
-    require('mini.pick').setup({
-      window = {
-        config = {
-
-        }
-      },
-      mappings = {
-        move_down = '<c-j>',
-        move_up = '<c-k>',
-      }
-    })
+    -- require('mini.pick').setup({
+    --   window = {
+    --     config = {
+    --
+    --     }
+    --   },
+    --   mappings = {
+    --     move_down = '<c-j>',
+    --     move_up = '<c-k>',
+    --   }
+    -- })
     require('mini.surround').setup()
   end
 }
